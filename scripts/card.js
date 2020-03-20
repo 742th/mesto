@@ -1,6 +1,6 @@
 // создает карточку в ДОМ и вешает на нее лайк и делит
 
-class Card {
+ export class Card {
 
     create(nameValue, linkValaue, likeArr = [], id, ownerId) {
         

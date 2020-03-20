@@ -1,5 +1,5 @@
 
-class FormValid {
+ export class FormValid {
   constructor(form, errors) {
     this.form = form;
     this.errors = errors;
@@ -11,25 +11,24 @@ class FormValid {
 
   checkInputValidity(event) {
     if (event.target.value === '' || event.target.value === null) {
-      // Надо исправить: вы обращаетесь в классе к переменной объявленной глобально, так делать нельзя
       event.target.nextElementSibling.textContent = this.errors.missInput;
 
     }
 
     if (event.target.value.length < 2) {
-      // Надо исправить: вы обращаетесь в классе к переменной объявленной глобально, так делать нельзя
+      
       event.target.nextElementSibling.textContent = this.errors.tooShort;
 
     }
 
     if (event.target.value.length > 30) {
-      // Надо исправить: вы обращаетесь в классе к переменной объявленной глобально, так делать нельзя
+      
       event.target.nextElementSibling.textContent = this.errors.tooLong;
 
     }
 
     if (event.target.validity.valid) {
-      // Надо исправить: вы обращаетесь в классе к переменной объявленной глобально, так делать нельзя
+      
       event.target.nextElementSibling.textContent = this.errors.noError;
     }
 
