@@ -1,12 +1,12 @@
 import "./style.css";
 
-import {Api} from './scripts/api.js';
-import {Card} from './scripts/card.js';
-import {CardList} from './scripts/cardList.js';
-import {FormValid} from './scripts/FormValid.js';
-import {Popup} from './scripts/popup.js';
-import {PopupImg} from './scripts/popupEx.js';
-import {UserInfo} from './scripts/UserInfo.js';
+import {Api} from '../scripts/api.js';
+import {Card} from '../scripts/card.js';
+import {CardList} from '../scripts/cardList.js';
+import {FormValid} from '../scripts/FormValid.js';
+import {Popup} from '../scripts/popup.js';
+import {PopupImg} from '../scripts/popupEx.js';
+import {UserInfo} from '../scripts/UserInfo.js';
 
 
 // ПЕРЕМЕННЫЕ
