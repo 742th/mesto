@@ -1,4 +1,4 @@
-import "./style.css";
+import './style.css';
 
 import {Api} from '../scripts/api.js';
 import {Card} from '../scripts/card.js';
