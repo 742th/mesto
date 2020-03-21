@@ -1,4 +1,5 @@
 // спец попап для картинок
+import {Popup} from './popup.js';
 export class PopupImg extends Popup {
   constructor(popup) {
     super(popup);
