@@ -26,7 +26,7 @@ module: {
         ]
         },
         {
-        test: /\.(png|jpg|gif|ico|svg)$/,
+        test: /\.(png|jpg|gif|ico|svg)$/i,
         use: [
             'file-loader?name=../images/[name].[ext]',
             {
@@ -37,7 +37,7 @@ module: {
         },
         {
             test: /\.(eot|ttf|woff|woff2)$/,
-            loader: 'file-loader?name=./vendor/[name].[ext]'
+            loader: 'file-loader?name=../vendor/[name].[ext]'
         }
 
         ]

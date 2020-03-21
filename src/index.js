@@ -1,4 +1,9 @@
 import './style.css';
+import img from '../images/close.svg';
+import imglikea from '../images/like-active.svg';
+import imglike from '../images/like-inactive.svg';
+import imglogo from '../images/logo.svg';
+import imgtrash from '../images/trash-icon.svg';
 
 import {Api} from '../scripts/api.js';
 import {Card} from '../scripts/card.js';
