@@ -1,6 +1,4 @@
 
-
-
 export class Api {
 
   constructor({ baseUrl, headers }) {

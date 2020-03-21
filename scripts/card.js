@@ -31,13 +31,12 @@
         cardDescription.appendChild(placeName);
         cardDescription.appendChild(likeButton);
         likeButton.appendChild(likeCounter);
-        placesList.appendChild(placeCard);
+        
 
         placeImg.setAttribute('style', `background-image: url(${linkValaue})`);
         placeName.textContent = nameValue;
         likeCounter.textContent = likeArr.length;
         placeCard.setAttribute('name', `${id}`);
-
         if (ownerId === "e3f4ed18aa41f88e7c7d1df2") {
             const deleteButton = document.createElement('button');
             deleteButton.classList.add('place-card__delete-icon');
