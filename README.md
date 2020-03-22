@@ -1,4 +1,4 @@
-![Alt-mesto][./images/logo.svg](https://742th.github.io/mesto/)
+[./images/logo.svg](https://742th.github.io/mesto/)
 ## Учебный проект [Yandex.Praktikum](https://praktikum.yandex.ru/)
 ## Сделал: Степанов Александр web-dev
 ## **https://742th.github.io/mesto/**
