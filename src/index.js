@@ -35,6 +35,7 @@ const logo = root.querySelector('.user-info__photo');
 const popupAv = root.querySelector('.popup_ava');
 const formAva = document.forms.ava;
 const avatar = formAva.elements.avatar;
+const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort8' : 'https://praktikum.tk/cohort8';
 
 
 
@@ -52,7 +53,7 @@ const errors = {
 const card = new Card();
 // Можно лучше -- адрес и токун лучше вынести в отдельные константы
 const api = new Api({
-  baseUrl: 'https://praktikum.tk/cohort8',
+  baseUrl: serverUrl,
   headers: {
     authorization: 'bea6708b-d9ac-4fb2-9c3f-0da05735cb87',
     'Content-Type': 'application/json'
