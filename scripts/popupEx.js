@@ -1,5 +1,6 @@
 // спец попап для картинок
-class PopupImg extends Popup {
+import {Popup} from './popup.js';
+export class PopupImg extends Popup {
   constructor(popup) {
     super(popup);
     this.img = this.popup.querySelector('.popup_img-op');

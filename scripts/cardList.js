@@ -1,6 +1,5 @@
 // создает контейнер с карточками начальными и добавляет новые к остальным
-
-class CardList {
+ export class CardList {
     constructor(container, card, form, api) {
         this.api = api;
         this.container = container;

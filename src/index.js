@@ -1,3 +1,18 @@
+import './style.css';
+// import img from '../images/close.svg';
+// import imglikea from '../images/like-active.svg';
+// import imglike from '../images/like-inactive.svg';
+// import imglogo from '../images/logo.svg';
+// import imgtrash from '../images/trash-icon.svg';
+
+import {Api} from '../scripts/api.js';
+import {Card} from '../scripts/card.js';
+import {CardList} from '../scripts/cardList.js';
+import {FormValid} from '../scripts/FormValid.js';
+import {Popup} from '../scripts/popup.js';
+import {PopupImg} from '../scripts/popupEx.js';
+import {UserInfo} from '../scripts/UserInfo.js';
+
 
 // ПЕРЕМЕННЫЕ
 const root = document.querySelector('.root');
@@ -20,6 +35,7 @@ const logo = root.querySelector('.user-info__photo');
 const popupAv = root.querySelector('.popup_ava');
 const formAva = document.forms.ava;
 const avatar = formAva.elements.avatar;
+const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort8' : 'https://praktikum.tk/cohort8';
 
 
 
@@ -37,7 +53,7 @@ const errors = {
 const card = new Card();
 // Можно лучше -- адрес и токун лучше вынести в отдельные константы
 const api = new Api({
-  baseUrl: 'https://praktikum.tk/cohort8',
+  baseUrl: serverUrl,
   headers: {
     authorization: 'bea6708b-d9ac-4fb2-9c3f-0da05735cb87',
     'Content-Type': 'application/json'

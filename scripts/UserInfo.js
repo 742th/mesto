@@ -1,4 +1,4 @@
-class UserInfo {
+export class UserInfo {
   constructor(form, api, imya, job, logo, avaForm) {
     this.api = api;
     this.form = form;
